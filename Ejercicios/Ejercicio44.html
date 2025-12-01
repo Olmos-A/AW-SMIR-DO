@@ -15,48 +15,73 @@
         <img src="../assets/img/R.png" alt="Tuenti_logo" width="250" style="align;">
     </center>
 
-    <fieldset style="background-color: white;">
+    <fieldset style="background-color: white; border-radius: 2%;">
 
         
         <p><b style="font-size:18px;">Únete a Tuenti</b> <b style="font-size: small; color: gray;">Todos los capos son obligatorios</b></p>
+
+        <select style="color: blue; margin-left: 40rem; border: 0;">
+            <option>Español</option>
+            <option>Ingles</option>
+            <option>Frances</option>
+        </select>
     
         <center>
-            <label>Nombre</label>
-            <input type="text" size="6" placeholder="Nombre">
-            <input type="text" size="6" placeholder="Apellidos">
-            <br><br>
+            <table>
+                <tr>
+                    <td style="text-align: right;">Nombre</td>
+                    <td><input type="text" size="6" placeholder="Nombre"></td>
+                    <td><input type="text" size="6" placeholder="Apellidos"></td>
+                </tr>
 
-            <label>Email:</label>
-            <input type="text">
-            <br><br>
-            Sexo
-            <input type="radio">Hombre
-            <input type="radio">Mujer
-            <input type="radio">Prefiero no decir
-            <br><br>
+                <tr>
+                    <td style="text-align: right;">Email:</td>
+                    <td colspan="2"><input type="text"></td>
+                </tr>
 
-            <label>Fecha de nacimiento</label>
-            <input type="date">
-            <p style="font-size: smaller;color: gray;">la edad minima permitida es 14</p>
+                <tr>
+                    <td style="text-align: right;">Sexo:</td>
+                    <td><input type="radio" id="1" value="1" name="sexo">Hombre</td>
+                    <td><input type="radio" id="2" value="2" name="sexo">Mujer</td>
+                </tr>
+
+                <tr>
+                    <td>Fecha de nacimiento:</td>
+                    <td colspan="2"><input type="date"></td>
+                </tr>
             
-            <label>Contraseña</label>
-            <input type="password">
-            <br><br>
+                <tr>
+                    <td></td>
+                    <td colspan="2" style="text-align: center; font-size: smaller; color: gray;">la edad minima permitida es 14</td>
+                </tr>
+            
+                <tr>
+                    <td style="text-align: right;">Contraseña:</td>
+                    <td colspan="2"><input type="password"></td>
+                </tr>
 
-            <label>Número movil</label>
-            <select>
-                <option>+34 E</option>
-                <option>+7</option>
-                <option>+82</option>
-                <option>+1</option>
-            </select>
-            <input type="text" size="10">
+                <tr>
+                    <td></td>
+                    <td colspan="2" style="text-align: center; font-size: smaller; color: blue;">Consejos para elegir contraseña</td>
+                </tr>
+            
+                <tr>
+                    <td style="text-align: right;">Número movil:</td>
+                    <td><select>
+                        <option>+34 E</option>
+                        <option>+7</option>
+                        <option>+82</option>
+                        <option>+1</option>
+                    </select></td>
+                    <td><input type="text" size="10"></td>
+                </tr>
+            </table>
         </center>
 
         <input type="checkbox"> Acepto las condiciones de uso
         <br><br>
 
-        <input type="submit" value="Disfruta de Tuenti!" style="background-color: lightblue; color: white;align-items: ;">
+        <input type="submit" value="Disfruta de Tuenti!" style="background-color: lightblue; color: white; margin-left: 40rem;">
     </fieldset>
 </body>
 </html>
